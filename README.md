@@ -41,8 +41,9 @@
     log.open_file = ~/.config/rtorrent/log.txt
 
     # Set up method to execute script on download completion
-    method.set_key = event.download.finished,complete,"execute.throw.bg=home/scripts/rtorrent-complete.sh"
+    method.set_key = event.download.finished,complete,"execute.throw.bg=home/scripts/rtorrent-complete.sh,$d.base_path="
     ```
+    Note that $d.base_path is passed as 2nd param aka $1 (not $2 asit's indexed from 0)
 
 3. **Test Script Execution**:
 
