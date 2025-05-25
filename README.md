@@ -28,6 +28,8 @@
     git clone https://github.com/example/repository.git
     ```
 
+    Note esnure to run chmod +x /path/to/script.sh so that you have permission to run script
+
 2. **Edit `.rtorrent.rc`**:
 
     Modify your `.rtorrent.rc` (typically found in home) configuration file with the following settings:
